@@ -10,7 +10,7 @@ const mapOptions: google.maps.MapOptions = {
   zoom: 4,
 };
 
-const searchForm = document.getElementById("form");
+const searchForm = document.getElementById("form") as HTMLFormElement;
 let google: typeof globalThis.google;
 let marker: google.maps.Marker = null;
 let map: google.maps.Map;
