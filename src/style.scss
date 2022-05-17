@@ -7,11 +7,13 @@ body {
 }
 
 .section {
-  background: #013d79;
-  background-image: url("./bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
+  background: #070218;
+  @media (min-width: 500px) {
+    background-image: url("./bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+  }
 }
 
 .section__heading {
