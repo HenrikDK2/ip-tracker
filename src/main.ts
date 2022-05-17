@@ -77,7 +77,8 @@ searchForm.addEventListener("submit", async (e) => {
       marker.setMap(map);
     }
     marker.setPosition(pos);
-    marker.setTitle(data.isp);
+    marker.setTitle(data.ip);
+    searchInput.value = "";
   } catch (error) {
     console.log(error);
   }
