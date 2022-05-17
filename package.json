@@ -1,0 +1,23 @@
+{
+  "name": "ip-tracker",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "npx parcel",
+    "start:netlify": "netlify dev",
+    "build": "npx parcel build"
+  },
+  "author": "Henrik Mundt Milo",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.5.0",
+    "@types/google.maps": "^3.48.8",
+    "@types/node": "^17.0.34",
+    "netlify-cli": "^10.3.1",
+    "parcel": "^2.5.0"
+  },
+  "dependencies": {
+    "@googlemaps/js-api-loader": "^1.14.2",
+    "@netlify/functions": "^1.0.0"
+  }
+}

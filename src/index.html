@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="IP tracking tool" />
+    <script src="main.ts" type="module" defer></script>
+    <link rel="stylesheet" href="style.scss" />
+    <title>IP tracker</title>
+  </head>
+  <body>
+    <section class="section">
+      <h2 class="section__heading">IP Address Tracker</h2>
+      <form id="form" class="search-form">
+        <label
+          class="search-form__label"
+          for="search"
+          aria-label="Search Inputfield"
+        >
+          <input
+            placeholder="Search for ip address or domain"
+            class="search-form__input"
+            id="search"
+            type="text"
+          />
+          <button class="search-form__btn" aria-label="Send">
+            <svg
+              class="search-form__btn-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+            >
+              <path
+                d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z"
+              />
+            </svg>
+          </button>
+        </label>
+      </form>
+      <ul class="info-list">
+        <li class="info">
+          <h3 class="info__heading">ip address</h3>
+          <p class="info__text"></p>
+        </li>
+        <li class="info">
+          <h3 class="info__heading">location</h3>
+          <p class="info__text"></p>
+        </li>
+        <li class="info">
+          <h3 class="info__heading">timezone</h3>
+          <p class="info__text"></p>
+        </li>
+        <li class="info">
+          <h3 class="info__heading">ISP</h3>
+          <p class="info__text"></p>
+        </li>
+      </ul>
+    </section>
+    <div class="map"></div>
+  </body>
+</html>

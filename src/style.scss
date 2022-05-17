@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.section {
+  background: #013d79;
+  background-image: url("./bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.section__heading {
+  text-align: center;
+  padding-top: 3rem;
+  color: #fff;
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.map {
+  min-height: calc(100vh - 300px);
+}
+
+.search-form__label {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.search-form__input {
+  width: 100%;
+  border-radius: 8px 0 0 8px;
+  border: none;
+  font-size: 1.25rem;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  height: 45px;
+  border: 1px solid #dddddd;
+}
+
+.search-form__btn {
+  border-radius: 0 8px 8px 0;
+  border: none;
+  border: 1px solid #dddddd;
+  width: 50px;
+  height: 45px;
+  font-size: 2rem;
+  color: #fff;
+  background-color: rgb(24, 24, 24);
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-form__btn-svg {
+  width: 10px;
+  fill: #fff;
+  transform: rotate(-180deg);
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  border-radius: 16px 16px 0 0;
+  font-size: 1.5rem;
+  background-color: #fff;
+  transition: opacity 1s ease;
+  @media (min-width: 1200px) {
+    position: relative;
+    display: flex;
+    width: 80%;
+    height: 200px;
+    bottom: -50px;
+    margin-bottom: -50px;
+    max-width: 1200px;
+    z-index: 2;
+    border-radius: 16px;
+  }
+}
+
+.info {
+  font-weight: bold;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+  flex: 1;
+  border-bottom: 1px solid #dfdfdf;
+  &:last-child {
+    border-right: none;
+  }
+
+  @media (min-width: 1200px) {
+    border-bottom: none;
+    border-right: 1px solid #dfdfdf;
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
+
+.info__heading {
+  color: #737373;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
