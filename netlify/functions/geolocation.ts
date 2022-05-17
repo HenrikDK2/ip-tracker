@@ -20,7 +20,7 @@ const handler: Handler = async (event) => {
   } catch (error) {
     return {
       statusCode: 500,
-      body: "Internal server error",
+      body: JSON.stringify(error),
     };
   }
 };
